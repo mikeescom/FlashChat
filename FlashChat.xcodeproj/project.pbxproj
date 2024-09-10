@@ -17,6 +17,7 @@
 		E447C7B62C90DA2100D5F6C5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B42C90DA2100D5F6C5 /* WelcomeViewController.swift */; };
 		E447C7B72C90DA2100D5F6C5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B22C90DA2100D5F6C5 /* RegisterViewController.swift */; };
 		E447C7B82C90DA2100D5F6C5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B12C90DA2100D5F6C5 /* ChatViewController.swift */; };
+		E4ACB03E2C90F3C90003D9F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4ACB03D2C90F3C90003D9F9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E447C7B22C90DA2100D5F6C5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E447C7B32C90DA2100D5F6C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E447C7B42C90DA2100D5F6C5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		E4ACB03D2C90F3C90003D9F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				E447C79C2C90D96E00D5F6C5 /* Assets.xcassets */,
 				E447C79E2C90D96E00D5F6C5 /* LaunchScreen.storyboard */,
 				E447C7A12C90D96E00D5F6C5 /* Info.plist */,
+				E4ACB03D2C90F3C90003D9F9 /* GoogleService-Info.plist */,
 			);
 			path = FlashChat;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E447C79D2C90D96E00D5F6C5 /* Assets.xcassets in Resources */,
+				E4ACB03E2C90F3C90003D9F9 /* GoogleService-Info.plist in Resources */,
 				E447C7A02C90D96E00D5F6C5 /* Base in Resources */,
 				E447C79B2C90D96D00D5F6C5 /* Base in Resources */,
 			);
