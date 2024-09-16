@@ -17,11 +17,13 @@
 		E447C7B62C90DA2100D5F6C5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B42C90DA2100D5F6C5 /* WelcomeViewController.swift */; };
 		E447C7B72C90DA2100D5F6C5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B22C90DA2100D5F6C5 /* RegisterViewController.swift */; };
 		E447C7B82C90DA2100D5F6C5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447C7B12C90DA2100D5F6C5 /* ChatViewController.swift */; };
+		E4A42F192C98AADB00DEC6AC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E4A42F182C98AADB00DEC6AC /* IQKeyboardManagerSwift */; };
 		E4ACB03E2C90F3C90003D9F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4ACB03D2C90F3C90003D9F9 /* GoogleService-Info.plist */; };
 		E4ACB0452C938F920003D9F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACB0442C938F920003D9F9 /* Constants.swift */; };
 		E4ACB0472C9393230003D9F9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACB0462C9393230003D9F9 /* Message.swift */; };
 		E4ACB04B2C94B5F80003D9F9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4ACB0492C94B5F80003D9F9 /* MessageCell.swift */; };
 		E4ACB04C2C94B5F80003D9F9 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4ACB04A2C94B5F80003D9F9 /* MessageCell.xib */; };
+		E4ACB04F2C94F0910003D9F9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E4ACB04E2C94F0910003D9F9 /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAE9CC4C37655F0858857C6C /* Pods_FlashChat.framework in Frameworks */,
+				E4ACB04F2C94F0910003D9F9 /* FirebaseFirestore in Frameworks */,
+				E4A42F192C98AADB00DEC6AC /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +161,10 @@
 			dependencies = (
 			);
 			name = FlashChat;
+			packageProductDependencies = (
+				E4ACB04E2C94F0910003D9F9 /* FirebaseFirestore */,
+				E4A42F182C98AADB00DEC6AC /* IQKeyboardManagerSwift */,
+			);
 			productName = FlashChat;
 			productReference = E447C7902C90D96D00D5F6C5 /* FlashChat.app */;
 			productType = "com.apple.product-type.application";
@@ -185,6 +193,10 @@
 				Base,
 			);
 			mainGroup = E447C7872C90D96D00D5F6C5;
+			packageReferences = (
+				E4ACB04D2C94F0910003D9F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E4A42F172C98AADB00DEC6AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = E447C7912C90D96D00D5F6C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -489,6 +501,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4A42F172C98AADB00DEC6AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+		E4ACB04D2C94F0910003D9F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4A42F182C98AADB00DEC6AC /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4A42F172C98AADB00DEC6AC /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		E4ACB04E2C94F0910003D9F9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4ACB04D2C94F0910003D9F9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E447C7882C90D96D00D5F6C5 /* Project object */;
 }
